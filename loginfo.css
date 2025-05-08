@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url('bgg1.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Form Container */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    padding: 30px;
+    border-radius: 20px; /* Curved edges */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.61);
+    max-width: 400px;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+}
+
+/* Form Title */
+.form-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.wheels {
+    color: #e70404; /* Red color for "Wheels" */
+}
+
+.deals {
+    color: #e70404; /* Red color for "Deals" */
+}
+
+/* Form Group (Each Input Field) */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #e70404;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn {
+    background-color: #e70404; /* Red color for Back to Home */
+    color: rgb(255, 255, 255);
+}
+
+.back-btn:hover {
+    background-color: #ff0000c9;
+}
+
+.confirm-btn {
+    background-color: #28a745; /* Green color for Confirm */
+    color: #fff;
+}
+
+.confirm-btn:hover {
+    background-color: #218838;
+}

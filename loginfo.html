@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheels and Deals Form</title>
+    <link rel="stylesheet" href="loginfo.css">
+    
+    <script>
+        // Ensure script runs after page loads
+      /*  window.onload = function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const carName = urlParams.get("car_name");
+
+            // Set car name in the form if available
+            if (carName) {
+                document.getElementById("car_name").value = carName;
+                document.getElementById("car").value = carName; // Set correct input field
+            }
+	};*/
+		window.onload = function () {
+	    const urlParams = new URLSearchParams(window.location.search);
+	    const carName = urlParams.get("car_name"); // Get car name from URL
+
+	    if (carName) {
+		document.getElementById("car_name").value = carName;//Setvalueinhiddeninput
+	    }
+	};
+
+    </script>
+
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="form-title"><span class="wheels">Wheels</span> and <span class="deals">Deals</span></h2>
+
+        <!-- Correct Hidden Input for Car Name -->
+       <!-- <input type="hidden" id="car_name" name="car_name">-->
+
+        <form id="loginfoForm" method="POST" action="process.php" onsubmit="return checkCarName();">
+            <!-- Hidden car input field (Fixing the mismatch) -->
+            <input type="hidden" id="car_name" name="car_name" value="">
+
+            <div class="form-group">
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="delivery_date">Choose Delivery Date:</label>
+                <input type="date" id="delivery_date" name="delivery_date" required>
+            </div>
+
+            <div class="button-group">
+                <a href="web.html" class="btn back-btn">HOME</a>
+                <button type="submit" class="btn confirm-btn">CONFIRM</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

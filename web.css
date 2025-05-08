@@ -1,0 +1,515 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+.background{
+    padding-top: 6px;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(bg2.jpg);
+    background-size: cover;
+    background-position: center;  
+     
+}
+
+/* Text Container */
+.text-container {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* WHEELS Style */
+.wheels {
+    color: red;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* and Style */
+.and {
+    color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* DEALS Style */
+.deals {
+    color: red;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+nav{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    
+}
+
+.logo{
+    padding-left: 20px;
+    width: 90px;
+    cursor: pointer;
+    
+}
+
+nav ul{
+   list-style: none;
+   width: 100%;
+   text-align: right;
+   padding-right: 300px;
+   
+    
+    
+    
+}
+
+nav li{
+    font-weight: 500;
+    display: inline-block; 
+    margin: 10px 20px;
+}
+nav li :hover{
+    color: black;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn{
+    
+    display:flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    
+    border-radius: 5px;
+    background:black;
+    color: #e70404;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    margin-right: 30px;
+
+    
+}
+
+.btn:hover{
+    color: #fff;
+}
+
+.content{
+    padding-left:50px ;
+    margin-top: 14%;
+    color: aliceblue;
+    max-width: 620px;
+    color: black;
+}
+
+.content h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 15px;
+    color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.308);
+}
+
+.content h1 span{
+    color:#ff0000c9 ;
+}
+
+.content p{
+    font-weight: 600;
+}
+
+.content form{
+    display: flex;
+    align-items: center;
+    background: rgb(187, 9, 9);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.content form input{
+    background: rgb(187, 9, 9);
+    border: 0;
+    outline: 0;
+    width: 100%;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+form ::placeholder{
+    color: black;
+    font-weight: 500;
+}
+
+.content form .btn{
+background-color: black;
+color: #e70404;
+box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+font-size: 15px;
+padding: 10px 30px;
+}
+
+.content .btn:hover{
+    color: #fff;
+}
+
+
+
+
+.cards{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+
+
+
+.carsection{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.service .carsection span{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3rem;
+
+}
+
+.carsection .txt {
+    font-weight: 700;
+    color: #000000;
+    font-size: 1rem;
+}
+
+.carsection .txt span{
+    color: #ff0000c9;
+    font-size: 1rem;
+    
+}
+
+.cars{
+    margin:35px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+
+}
+
+.cars .box{
+    
+    background-color:rgba(211, 211, 211, 0.884);
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+
+}
+.cars .box.boximg{
+    height: 100%;
+    width: 200px;
+}
+.cars  img{
+   /* border: 0.2px solid black; */
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cars .box p{
+    padding: 0 10px;
+    border: 1px solid black;
+    width: 58px;
+    border-radius: 0.5rem;
+    margin: 1rem 0 1rem;
+}
+
+.cars .boxh3{
+    font-weight: 500;
+}
+
+.cars .box h2{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: black;
+    margin: 0.2rem 0 0.5rem;
+}
+
+.cars .box span{
+    font-size: 0.8rem;
+    font-weight: 500;
+    
+}
+.cars .bttn{
+    display: flex;
+   /* border: 1px solid black; */
+   
+   box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    justify-content: center;
+    background-color: rgb(170, 17, 17);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cars .bttn:hover{
+    background-color:#e70404;
+}
+
+
+
+
+
+
+
+
+/* Section Styling */
+.start-sec {
+    height: 390px;
+    padding: 30px;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    background-color: white;
+}
+
+/* Main Section */
+.start-sec .main-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg, #b94b4b, #000000);
+    border-radius: 10px;
+    padding: 30px;
+    column-gap: 50px;
+}
+
+
+/* Left Section - Moves Text & Button to Left */
+.start-sec .main-sec .left {
+    padding: 20px;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Moves everything to the left */
+    text-align: left; /* Ensures text is left-aligned */
+    row-gap: 20px;
+}
+
+/* Heading */
+.start-sec .main-sec .left .txt1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.start-sec .txt2{
+    font-weight: 600;
+}
+
+/* Button Wrapper */
+.start-sec .main-sec .left .bttnn {
+    display: flex;
+    padding-left: 180px;
+    font-size: 30px;
+    box-shadow: none; /* Remove any shadow */
+    background: none;  /* Remove background */
+    border: none;      /* Remove borders */
+}
+
+/* Button */
+.start-sec .main-sec .left .bttnn button {
+    padding: 10px 20px;
+    border: none;
+    background-color: black; /* Button color */
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* Right Section */
+.start-sec .main-sec .right {
+    padding: 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    width: 300px;
+    align-items: center;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-image: linear-gradient(155deg, #ff0f0f,#ff0f0f);
+}
+
+/* Image */
+.start-sec .main-sec .right img {
+    width: 50vw;
+    filter: drop-shadow(20px 50px 25px #ffffff86);
+}  
+
+
+
+/*  */
+
+.achie-sec {
+    height: 390px;
+    padding: 30px;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    background-color: whitesmoke
+    
+}
+
+.achie-sec .txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.achie-sec .txt .txt1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.achie-sec .txt .txt1 span {
+    color: #ff0000c9;
+}
+
+.achie-sec p{
+    font-weight: 600;
+}
+
+.achie-sec .main-sec .box {
+    background-color: rgb(170, 17, 17);
+    width: 300px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    border-radius: 10px;
+    transition: transform 0.5s ;
+}
+
+.achie-sec .main-sec .box .txt1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.achie-sec .main-sec .box:hover{
+    transform: translateY(-10px);
+}
+
+
+
+
+.achie-sec .main-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+
+
+
+/* */
+
+.support-sec {
+    height: 450px;
+    padding: 30px;
+    justify-content: center; 
+    flex-direction: column;
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: center;
+}
+
+.support-sec .txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.support-sec .txt .txt1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.support-sec .txt .txt1 span {
+    color: #ff0000c9;
+}
+
+.support-sec .main-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.support-sec .main-sec .box {
+    /* background: red; */
+    padding: 20px;
+    width: 575px;
+    display: flex;
+    column-gap: 36px;
+    /* flex-direction: column; */
+    row-gap: 20px;
+}
+
+.support-sec .main-sec .box i {
+    font-size: 30px;
+    background-color: rgb(170, 17, 17);
+    width: fit-content;
+    padding: 34px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+
+.support-sec .main-sec .box .txt-sec {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.support-sec .main-sec .box .txt-sec .txt1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
